@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'hallowJedi';
+    src: url('fonts/Soloist3D-3vP6.otf') format('truetype');
+}
+@font-face {
+    font-family: 'fillJedi';
+    src: url('fonts/Soloist-Z6M8.otf') format('truetype');
+}
+body {
+    font-family: 'fillJedi', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.star-wars-title {
+    font-family: 'hallowJedi', sans-serif;
+    font-size: 2rem;
+    color: pink;
+    text-shadow: 2px 2px 5px black;
+    position: absolute;
+    top: 80px; /* Adjust this to move the text down or up */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    z-index: 2; /* Ensure the text stays on top of other elements */
+}
+canvas {
+    display: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.safari-window {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    background: url('images/nursing-sharks.png') no-repeat top right; /* Set the background image */
+    background-size: 40%; /* Ensure the image covers the safari window */
+    background-color: white;  /* Set a fallback background color (e.g., white) */
+    border-radius: 10px;
+    box-shadow: 0 0px 20px rgba(255,192,203,1);
+    overflow: hidden;
+    z-index: 1;
+}
+.safari-header {
+    height: 30px;
+    background: #FFC0CB;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.safari-buttons {
+    display: flex;
+    gap: 5px;
+}
+.safari-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.close {
+    background: #ff5f57;
+}
+.minimize {
+    background: #ffbd2e;
+}
+.fullscreen {
+    background:  #28c940;
+}
+.safari-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile-picture {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area */
+}
+.about-me, .socials{
+    margin-top: 20px;
+    width: 20%;
+}
+h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    font-size: .8rem;
+    font-family: "Roboto Slab", serif;
+}
+
+li a {
+    color: #FFC0CB; /* LinkedIn blue color */
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.audio-container {
+    display: flex; /* Aligns the play button and text horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 15px; /* Space between the button and text */
+    margin-top: 80px;
+}
+
+.play-button {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    background-color: rgba(255, 192, 203, 0.8); /* Pink button with slight transparency */
+    color: white;
+    font-size: 1.5rem;
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button equal to width */
+    border: none;
+    border-radius: 50%; /* Makes the button a circle */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Ensure button is on top of the background */
+    
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+.play-button:hover {
+    background-color: rgba(255, 88, 161, 0.8); /* Slightly darker hover effect */
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column; /* Aligns text vertically */
+}
+
+.song-name, .artist-name {
+    margin: 0; /* Removes default margin */
+    color: white; /* White text color for better visibility */
+    font-family: "Roboto Slab", serif;
+}
+
+.song-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent artist name */
+}
