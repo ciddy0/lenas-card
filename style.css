@@ -18,11 +18,11 @@ body {
 }
 .star-wars-title {
     font-family: 'hallowJedi', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: pink;
     text-shadow: 2px 2px 5px black;
     position: absolute;
-    top: 80px; /* Adjust this to move the text down or up */
+    top: 50px; /* Adjust this to move the text down or up */
     left: 50%;
     transform: translateX(-50%); /* Center the text horizontally */
     z-index: 2; /* Ensure the text stays on top of other elements */
@@ -36,8 +36,8 @@ canvas {
 .safari-window {
     position: relative;
     width: 80%;
-    max-width: 800px;
-    height: 60%;
+    max-width: 400px;
+    height: auto;
     background: url('images/nursing-sharks.png') no-repeat top right; /* Set the background image */
     background-size: 40%; /* Ensure the image covers the safari window */
     background-color: white;  /* Set a fallback background color (e.g., white) */
@@ -72,10 +72,11 @@ canvas {
     background:  #28c940;
 }
 .safari-content {
-    padding: 20px;
+    padding: 10px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .profile-picture {
     width: 100px; /* Adjust size as needed */
@@ -84,8 +85,8 @@ canvas {
     object-fit: cover; /* Ensures the image covers the area */
 }
 .about-me, .socials{
-    margin-top: 20px;
-    width: 20%;
+    margin-top: 10px;
+    width: 100%;
 }
 h3 {
     color: #333;
